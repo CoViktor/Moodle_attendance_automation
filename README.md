@@ -5,7 +5,8 @@
 
 As part of the AI trainee program at BeCode.org, attendance is mandatory and tracked twice each day. To challenge myself and learn more about Selenium, I've automated my attendance logging. This script runs at the required times each day, using Selenium for web interaction, and includes a feature to skip holidays. 
 
-![Attendance Automation](https://cdn.schoolstickers.com/products/en/819/A159592-00.png)
+<img src="https://cdn.schoolstickers.com/products/en/819/A159592-00.png" width="400" height="auto"/>
+
 ## 📦 Repo structure
 ```
 .
