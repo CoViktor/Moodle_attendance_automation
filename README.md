@@ -3,7 +3,7 @@
 
 ## 🏢 Description
 
-As part of the AI trainee program at BeCode.org, attendance is mandatory and tracked twice each day. To challenge myself and learn more about Selenium, I've automated my attendance logging. This script runs at the required times each day, using Selenium for web interaction, and includes a feature to skip holidays. 
+As part of the AI trainee program at BeCode.org, attendance is mandatory and tracked twice each day. To challenge myself and learn more about Selenium, I've automated my attendance logging. This script runs at the required times each day with Windows Task Scheduler, using Selenium for web interaction, and includes a feature to skip holidays. 
 
 <img src="https://cdn.schoolstickers.com/products/en/819/A159592-00.png" width="400" height="auto"/>
 
@@ -65,6 +65,6 @@ This project took an afternoon to complete.
 - **Date-time dependency**: Due to the nature of Moodle, the pathing to attendance button and the url might change depending on the date. This needs to be checked out and will be updated if necessary.
 
 ## 📌 Personal Situation
-This project was undertaken as a learning challenge during my AI Bootcamp at [BeCode.org](https://becode.org/). It has been a valuable experience in automating real-world tasks and learning to use Selenium for web automation.
+This project was undertaken as a learning challenge during my AI Bootcamp at [BeCode.org](https://becode.org/). It has been a valuable experience in automating real-world tasks and learning to use Selenium for web automation, as well as Windows Task Scheduler for further automation purposes.
 
 Connect with me on [LinkedIn](https://www.linkedin.com/in/viktor-cosaert/).
