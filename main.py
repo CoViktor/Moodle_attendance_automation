@@ -1,4 +1,5 @@
 from selenium import webdriver
+from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 
 import os
@@ -74,8 +75,13 @@ driver.get(url_attendance)
 if 'login' in driver.current_url:
     login_handling()
 # Locate & click attendance button
-# attendance_button = driver.find_element(By.XPATH, "")
-# attendance_button.click()
+attendance_button = driver.find_element(By.XPATH, "//a[contains(@href, 'https://moodle.becode.org/mod/attendance/attendance.php')]")
+attendance_button.click()
+time.sleep(5)
+# Locate & click save changes button
+save_button = driver.find_element(By.XPATH, "//input[@id='id_submitbutton']")
+save_button.click()
+time.sleep(3)
 
 # close the driver after use
 driver.quit()
