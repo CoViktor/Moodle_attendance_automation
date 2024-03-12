@@ -52,6 +52,9 @@ if 'login' in driver.current_url:
 attendance_button = driver.find_element(By.XPATH, "_")
 attendance_button.click()
 
+# checking for weekday and changing location accordingly
+# saving attendance
+
 driver.quit()
 ```
 ## ⏱️ Timeline
