@@ -60,9 +60,10 @@ This project took an afternoon to complete.
 ## 🔧 Updates & Upgrades
 ### Recent Updates
 - **11/03/24**: Added pathing to the disappearing attendance button.
+- **12/03/24**: 1| Upgraded pathing to the attendance button to ignore 'check out' button. 2| Added feature that thecks weekday and selects location to check in from ('On campus' or 'At home') accordingly.
 
 ### Planned Upgrades
-- **Date-time dependency**: Due to the nature of Moodle, the pathing to attendance button and the url might change depending on the date. This needs to be checked out and will be updated if necessary.
+- **Date-time dependency**: Due to the nature of Moodle, updates might change buttons. Updates will account for changes when necessary.
 - **Location dependency**: Script needs to be updated to adjust the location to campus or home, depending on the day.
 
 ## 📌 Personal Situation
