@@ -1,6 +1,7 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.support.ui import Select
 
 import os
 import time
@@ -13,7 +14,6 @@ holidays = ['2024-03-22', '2024-04-01', '2024-04-02', '2024-04-03',
             '2024-07-11', '2024-07-12', '2024-08-15']
 today = datetime.now().strftime('%Y-%m-%d')
 if today in holidays:
-    print("Today is a holiday. Exiting...")
     exit()
 
 driver = webdriver.Edge()
@@ -75,9 +75,29 @@ driver.get(url_attendance)
 if 'login' in driver.current_url:
     login_handling()
 # Locate & click attendance button
-attendance_button = driver.find_element(By.XPATH, "//a[contains(@href, 'https://moodle.becode.org/mod/attendance/attendance.php')]")
+attendance_button = driver.find_element(By.XPATH, "//a[contains(text(), 'Check in')]")
 attendance_button.click()
 time.sleep(5)
+
+# Picking the location based on day of the week
+select_element = driver.find_element(By.ID, "id_location")
+location_select = Select(select_element)
+
+# Check the day of the week
+today_weekday = datetime.now().weekday()
+
+# Monday and Thursday are 'oncampus' (0 and 3), others are 'athome'
+if today_weekday == 0 or today_weekday == 3:
+    location = "oncampus"
+else:
+    location = "athome"
+
+if location == "oncampus":
+    location_select.select_by_value("oncampus")
+else:
+    location_select.select_by_value("athome")
+time.sleep(1)    
+
 # Locate & click save changes button
 save_button = driver.find_element(By.XPATH, "//input[@id='id_submitbutton']")
 save_button.click()
