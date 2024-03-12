@@ -63,6 +63,7 @@ This project took an afternoon to complete.
 
 ### Planned Upgrades
 - **Date-time dependency**: Due to the nature of Moodle, the pathing to attendance button and the url might change depending on the date. This needs to be checked out and will be updated if necessary.
+- **Location dependency**: Script needs to be updated to adjust the location to campus or home, depending on the day.
 
 ## 📌 Personal Situation
 This project was undertaken as a learning challenge during my AI Bootcamp at [BeCode.org](https://becode.org/). It has been a valuable experience in automating real-world tasks and learning to use Selenium for web automation, as well as Windows Task Scheduler for further automation purposes.
