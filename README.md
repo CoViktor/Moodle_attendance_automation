@@ -3,7 +3,7 @@
 
 ## 🏢 Description
 
-As part of the AI trainee program at BeCode.org, attendance is mandatory and tracked twice each day. To challenge myself and learn more about Selenium, I've automated my attendance logging. This script runs at the required times each day with Windows Task Scheduler, using Selenium for web interaction, and includes a feature to skip holidays. 
+As part of the AI trainee program at BeCode.org, attendance is mandatory and tracked twice each day. To challenge myself and learn more about Selenium, I've automated my attendance logging. This script runs at the required times each day with Windows Task Scheduler, using Selenium for web interaction, and includes a feature to skip holidays. Additionally, checks day of the week and reports the attendance from 'At home' or 'On campus' accordingly.
 
 <img src="https://cdn.schoolstickers.com/products/en/819/A159592-00.png" width="400" height="auto"/>
 
