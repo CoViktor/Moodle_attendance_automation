@@ -7,13 +7,21 @@ As part of the AI trainee program at BeCode.org, attendance is mandatory and tra
 
 <img src="https://cdn.schoolstickers.com/products/en/819/A159592-00.png" width="400" height="auto"/>
 
+### Issues
+- Contact me if you run into issues, so that we can troubleshoot together.
+- If you were able to solve the issue yourself, and the solution could be added to this setup file, please notify me so the information can be updated.
+
+Find me on [LinkedIn](https://www.linkedin.com/in/viktor-cosaert/).
+
 ## 📦 Repo structure
 ```
 .
 ├── Setup info/
+│   ├── macOS_setup.md
 │   └── windows_setup.md
 ├── .gitignore
 ├── credentials.txt (created on first run)
+├── main_apple.py
 ├── main.py
 ├── README.md
 └── requirements.txt
@@ -77,7 +85,7 @@ This project took an afternoon to complete.
 
 ## 🔧 Updates & Upgrades
 ### Recent Updates
-- **17/03/24**: 1| Updated main.py. 2| Added windows_setup.md for setup guidance.
+- **17/03/24**: 1| Updated main.py. 2| Added windows_setup.md for setup guidance. 3| Added macOS alternative.
 - **12/03/24**: 1| Upgraded the pathing to the attendance button to ignore 'check out'button. 2| Added feature that thecks weekday and selects location to check in from ('On campus' or 'At home') accordingly.
 - **11/03/24**: Added pathing to the disappearing attendance button.
 
