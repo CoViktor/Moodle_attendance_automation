@@ -7,11 +7,11 @@ As part of the AI trainee program at BeCode.org, attendance is mandatory and tra
 
 <img src="https://cdn.schoolstickers.com/products/en/819/A159592-00.png" width="400" height="auto"/>
 
-### Issues
+### Issues and update requests
 - Contact me if you run into issues, so that we can troubleshoot together.
 - If you were able to solve the issue yourself, and the solution could be added to this setup file, please notify me so the information can be updated.
 
-Find me on [LinkedIn](https://www.linkedin.com/in/viktor-cosaert/).
+Find me on [LinkedIn](https://www.linkedin.com/in/viktor-cosaert/) if you would like to provide feedback or work together.
 
 ## 📦 Repo structure
 ```
@@ -97,3 +97,4 @@ This project took an afternoon to complete.
 This project was undertaken as a learning challenge during my AI Bootcamp at [BeCode.org](https://becode.org/). It has been a valuable experience in automating real-world tasks and learning to use Selenium for web automation, as well as Windows Task Scheduler for further automation purposes.
 
 Connect with me on [LinkedIn](https://www.linkedin.com/in/viktor-cosaert/).
+
