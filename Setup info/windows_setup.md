@@ -1,17 +1,19 @@
 # Windows setup
-Runs on edge, since this is installed by default on each Windows computer.
+Runs on Edge, since this is installed by default on each Windows computer.
 
 ### Local setup
 - Step 1: Clone the repo locally.
 - Step 2: Install the required dependencies (see requirements.txt).
-    - ``` pip install requirements.txt ```
-- Step 3: Setup the holidays and campus_days lists at the top of main.py
-- Step 4: Run main.py once to input and store your credentials.
-    - The file credentials.txt is added to .gitignore and won't be pushed to github.
+    - Open the terminal and run ``` pip install -r requirements.txt ```
+- Step 3: Setup the holidays and campus_days lists at the top of `main.py`
+- Step 4: Run `main.py` once to input and store your credentials.
+    - The file `credentials.txt` is added to `.gitignore` and won't be pushed to GitHub.
 
 ### Task Scheduler setup
+We will use Task Scheduler to automate the 
+
 - Step 1: Download the Edge Driver
-    - Download link: https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/?form=MA13LH
+    - [Download link](https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/?form=MA13LH)
     - Version available at Settings-help in the browser.
     - Install in a folder you can remember, since we'll need the filepath below.
 - Step 2: Navigate to Task Scheduler (search it in start menu).
@@ -38,4 +40,10 @@ Runs on edge, since this is installed by default on each Windows computer.
         - Optional: toggle off the Power settings
     - OK
 - Step 4: Right click Run your new task to test if it works.
+
+### Issues
+- Contact me if you run into issues, so that we can troubleshoot together.
+- If you were able to solve the issue yourself, and the solution could be added to this setup file, please notify me so the information can be updated.
+
+Find me on [LinkedIn](https://www.linkedin.com/in/viktor-cosaert/).
 
