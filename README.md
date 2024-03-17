@@ -10,6 +10,8 @@ As part of the AI trainee program at BeCode.org, attendance is mandatory and tra
 ## 📦 Repo structure
 ```
 .
+├── Setup info/
+│   └── windows_setup.md
 ├── .gitignore
 ├── credentials.txt (created on first run)
 ├── main.py
