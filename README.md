@@ -32,6 +32,7 @@ As part of the AI trainee program at BeCode.org, attendance is mandatory and tra
     ```
 
 ## ✔️ Usage 
+- See the Setup info folder for guidance on the initial setup
 
 This script automates the process of logging attendance on the BeCode platform. It checks the current date against a list of predefined holidays and logs in to mark attendance if it's not a holiday.
 
@@ -42,6 +43,18 @@ Schedule the script to run at the required logging times using Task Scheduler or
 Here's a snippet from main.py demonstrating the core functionality:
 
 ```python
+
+# ::::::::::::::::::SETUP::::::::::::::::::::
+# Add your holidays here, so that the script doesn't run when it doesn't have to
+holidays = ['2024-03-22', '2024-04-01', '2024-04-02']
+today = datetime.now().strftime('%Y-%m-%d')
+# Clarify the days you usually attend from campus here, as opposed to the days at home
+# (0 = monday, 1 = tuesday, 2 = wednesday, ...)
+campus_days = [0, 2, 4]
+# ::::::::::::::::::END SETUP::::::::::::::::::::
+if today in holidays:
+    exit()
+
 def get_credentials():
 
 def login_handling():
@@ -62,8 +75,9 @@ This project took an afternoon to complete.
 
 ## 🔧 Updates & Upgrades
 ### Recent Updates
+- **17/03/24**: 1| Updated main.py. 2| Added windows_setup.md for setup guidance.
+- **12/03/24**: 1| Upgraded the pathing to the attendance button to ignore 'check out'button. 2| Added feature that thecks weekday and selects location to check in from ('On campus' or 'At home') accordingly.
 - **11/03/24**: Added pathing to the disappearing attendance button.
-- **12/03/24**: 1| Upgraded pathing to the attendance button to ignore 'check out' button. 2| Added feature that thecks weekday and selects location to check in from ('On campus' or 'At home') accordingly.
 
 ### Planned Upgrades
 - **Date-time dependency**: Due to the nature of Moodle, updates might change buttons. Updates will account for changes when necessary.

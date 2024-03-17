@@ -7,15 +7,19 @@ import os
 import time
 from datetime import datetime
 
-# Checking if it's not a day I don't have to attend
+# ::::::::::::::::::SETUP::::::::::::::::::::
+# Add your holidays here, so that the script doesn't run when it doesn't have to
 holidays = ['2024-03-22', '2024-04-01', '2024-04-02', '2024-04-03',
             '2024-04-04', '2024-04-05', '2024-05-01', '2024-04-09',
             '2024-07-05', '2024-07-08', '2024-07-09', '2024-07-10', 
             '2024-07-11', '2024-07-12', '2024-08-15']
 today = datetime.now().strftime('%Y-%m-%d')
+# Clarify the days you usually attend from campus here, as opposed to the days at home
+# (0 = monday, 1 = tuesday, 2 = wednesday, ...)
+campus_days = [0, 3]
+# ::::::::::::::::::END SETUP::::::::::::::::::::
 if today in holidays:
     exit()
-
 driver = webdriver.Edge()
 url_attendance = 'https://moodle.becode.org/mod/attendance/view.php?id=90'
 
@@ -67,8 +71,6 @@ def login_handling():
     password_input.send_keys(Keys.RETURN)
     time.sleep(5)
 
-
-# Your script logic here
 # Starting driver
 driver.get(url_attendance)
 # Check if 'login' is in the URL
@@ -80,18 +82,14 @@ attendance_button.click()
 time.sleep(5)
 
 # Picking the location based on day of the week
-select_element = driver.find_element(By.ID, "id_location")
-location_select = Select(select_element)
-
-# Check the day of the week
 today_weekday = datetime.now().weekday()
-
-# Monday and Thursday are 'oncampus' (0 and 3), others are 'athome'
-if today_weekday == 0 or today_weekday == 3:
+if today_weekday in campus_days:
     location = "oncampus"
 else:
     location = "athome"
 
+select_element = driver.find_element(By.ID, "id_location")
+location_select = Select(select_element)
 if location == "oncampus":
     location_select.select_by_value("oncampus")
 else:
